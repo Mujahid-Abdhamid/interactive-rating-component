@@ -1,0 +1,182 @@
+/* ****************** */
+/* GLOBAL RESETS */
+/* ****************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: hsl(216, 12%, 8%);
+
+  position: relative;
+}
+
+/* ****************** */
+/* RATING CARD */
+/* ****************** */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2.4rem;
+}
+
+.rating-card {
+  max-width: 40rem;
+  background-color: hsl(215, 22%, 15%);
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+}
+
+.rating-icon {
+  display: inline-block;
+  background-color: hsl(213, 19%, 18%);
+  /* padding: 1.4rem 1.6rem; */
+  padding: 1.6rem 1.8rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.rating-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 2.4rem;
+}
+
+.rating-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+
+.rating-number:link,
+.rating-number:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(217, 12%, 63%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: hsl(206, 17%, 18%);
+  text-align: center;
+
+  border-radius: 50%;
+  padding: 1.6rem 2rem;
+  transition: all 0.3s;
+}
+
+.rating-number:hover,
+.rating-number:active {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+.cta-btn {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.4rem 2.4rem;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 1000rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* ****************** */
+/* MODAL */
+/* ****************** */
+
+.modal {
+  max-width: 40rem;
+  background-color: hsl(215, 22%, 15%);
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+  text-align: center;
+  position: absolute;
+}
+
+.modal-imgbox {
+  margin-bottom: 3.2rem;
+}
+
+.modal-rating-textbox {
+  display: inline-block;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(206, 17%, 18%);
+  border-radius: 100rem;
+  padding: 1.4rem 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.modal-rating-text {
+  font-size: 1.6rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ****************** */
+/* HELPER CLASS */
+/* ****************** */
+
+.hidden {
+  display: none;
+}
+
+/* ****************** */
+/* MEDIA QUERIES */
+/* ****************** */
+
+/* ****************** */
+/* Responding to mobile-md(464px) */
+/* ****************** */
+
+@media (max-width: 29em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* ****************** */
+/* Responding to mobile-sm(395px) */
+/* ****************** */
+
+@media (max-width: 25em) {
+  html {
+    font-size: 50%;
+  }
+}
